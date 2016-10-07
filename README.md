@@ -44,7 +44,7 @@ Initiate Purchase Request and Redirect using the default gateway:-
     
     {
         // For default Gateway
-        $response = Indipay::response($request);
+        $response = Atompay::response($request);
 
         dd($response);
     
