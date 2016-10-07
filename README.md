@@ -1,87 +1,60 @@
-# Project Title
+# Atom Payment Gateway Intergration Using Laravel 5 above version
 
-One Paragraph of project description goes here
+This package will help you to Intergrate Atom Payment Gateway in Laravel framework
 
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Prerequisities
+<h2>Installation</h2>
+<b>Step 1:</b> Install package using composer
+<pre><code>
+    composer require composer require legendconsulting/atom
+</pre></code>
 
-What things you need to install the software and how to install them
+<h2>Installation</h2>
+<b>Step 1:</b> Install package using composer
+<pre><code>
+    composer require composer require legendconsulting/atom
+</pre></code>
 
+<b>Step 2:</b> Add the service provider to the config/app.php file in Laravel
+<pre><code>
+    'PaymentGateway\Atom\AtomServiceProvider::class',
+</pre></code>
+
+<b>Step 4:</b> Publish the config by running in your terminal
+<pre><code>
+    php artisan vendor:publish
+</pre></code>
+
+Edit the config/Atompay.php. Set the Mode of Tesing for True and False... <br>
+<pre><code> use Softon\Indipay\Facades\Atompay;  </code></pre>
+Initiate Purchase Request and Redirect using the default gateway:-
+```php 
+      /* All Required Parameters by your Gateway */
+      
+      $parameters = [
+        'email'        => 'xyz@xyz.com',
+        'phone'        => '**********',
+        'Amount'        => '100',
+      ];
+        
+        $return = Atompay::prepare($parameters);
+
+        return redirect($return) ;
 ```
-Give examples
-```
+Also add the response route to the remove_csrf_check config item to remove CSRF check on these routes.):-
+<pre><code> 
+    public function response(Request $request)
+    
+    {
+        // For default Gateway
+        $response = Indipay::response($request);
 
-### Installing
+        dd($response);
+    
+    }  
+</code></pre>
 
-A step by step series of examples that tell you have to get a development env running
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* Dropwizard - Bla bla bla
-* Maven - Maybe
-* Atom - ergaerga
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
