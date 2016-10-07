@@ -12,12 +12,6 @@ These instructions will get you a copy of the project up and running on your loc
     composer require legendconsulting/atom
 </pre></code>
 
-<h2>Installation</h2>
-<b>Step 1:</b> Install package using composer
-<pre><code>
-    composer require composer require legendconsulting/atom
-</pre></code>
-
 <b>Step 2:</b> Add the service provider to the config/app.php file in Laravel
 <pre><code>
     'PaymentGateway\Atom\AtomServiceProvider::class',
