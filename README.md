@@ -9,7 +9,7 @@ These instructions will get you a copy of the project up and running on your loc
 <h2>Installation</h2>
 <b>Step 1:</b> Install package using composer
 <pre><code>
-    composer require composer require legendconsulting/atom
+    composer require legendconsulting/atom
 </pre></code>
 
 <h2>Installation</h2>
