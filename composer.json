@@ -4,7 +4,7 @@
     "license": "MIT",
     "keywords": [
         "Laravel 5",
-        "Indian Payment Gateways",
+        "Indian Payment Gateway",
         "Atom Payment Gateway"
     ],
     
@@ -27,6 +27,6 @@
         }
     },
     
-    "minimum-stability": "stable"
+    "minimum-stability": "dev"
     
 }
