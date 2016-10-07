@@ -1,0 +1,32 @@
+{
+    "name": "legend/atom",
+    "description": "This pack is for integrating Atom payment gateway using Laravel 5 *",
+    "license": "MIT",
+    "keywords": [
+        "Laravel 5",
+        "Indian Payment Gateways",
+        "Atom Payment Gateway"
+    ],
+    
+    "authors": [
+        {
+            "name": "Azim",
+            "email": "vinayak@legendsconsulting.in"
+        }
+    ],
+
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~5.0|~6.0",
+        "guzzlehttp/guzzle": "~5.0|~6.0"
+    },
+    
+    "autoload": {
+        "psr-4": {
+            "PaymentGateway\\Atom\\":"Legends/PaymentGateway/Atom/src"
+        }
+    },
+    
+    "minimum-stability": "dev"
+    
+}
