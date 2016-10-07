@@ -23,7 +23,7 @@ These instructions will get you a copy of the project up and running on your loc
 </pre></code>
 
 Edit the config/Atompay.php. Set the Mode of Tesing for True and False... <br>
-<pre><code> use Softon\Indipay\Facades\Atompay;  </code></pre>
+<pre><code> use PaymentGateway\Atom\Facades\Atompay;  </code></pre>
 Initiate Purchase Request and Redirect using the default gateway:-
 ```php 
       /* All Required Parameters by your Gateway */
