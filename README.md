@@ -43,7 +43,7 @@ Initiate Purchase Request and Redirect using the default gateway:-
     public function response(Request $request)
     
     {
-        // For default Gateway
+        
         $response = Atompay::response($request);
 
         dd($response);
