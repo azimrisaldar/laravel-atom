@@ -44,7 +44,7 @@ Initiate Purchase Request and Redirect using the default gateway:-
 
         return redirect($return) ;
 ```
-Also add the response route to the remove_csrf_check config item to remove CSRF check on these routes.):-
+
 <pre><code> 
     public function response(Request $request)
     
