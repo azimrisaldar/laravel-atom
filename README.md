@@ -7,17 +7,17 @@ This package will help you to Intergrate Atom Payment Gateway in Laravel framewo
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 <h2>Installation</h2>
-<b>Step 1:</b> Install package using composer
+Install package using composer
 <pre><code>
     composer require legendconsulting/atom
 </pre></code>
 
-<b>Step 2:</b> Add the service provider to the config/app.php file in Laravel
+Add the service provider to the config/app.php file in Laravel
 <pre><code>
     'PaymentGateway\Atom\AtomServiceProvider::class',
 </pre></code>
 
-<b>Step 4:</b> Publish the config by running in your terminal
+Publish the config by running in your terminal
 <pre><code>
     php artisan vendor:publish
 </pre></code>
