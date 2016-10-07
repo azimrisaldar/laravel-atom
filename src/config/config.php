@@ -2,19 +2,13 @@
 
 return [
 
-    /*
-    |--------------------------------------------------------------------------
-    | Indipay Service Config
-    |--------------------------------------------------------------------------
-    |   gateway = CCAvenue / PayUMoney / EBS / Citrus / InstaMojo
-    |   view    = File
-    */
+   
 
-    'gateway' => 'AtomPayment',                           // Replace with the name of default gateway you want to use
+    'gateway' => 'AtomPayment',                           
 
     'testMode'  => true,                                // True for Testing the Gateway [For production false]
 
-    'Atom' => [                                    // PayUMoney Parameters
+    'Atom' => [                                    
         'ATOM_LOGIN'        => env('ATOM_LOGIN', ''),
         'ATOM_PASSWORD'     => env('ATOM_PASSWORD', ''),
         'ATOM_PORT'         => env('ATOM_PORT', ''),
