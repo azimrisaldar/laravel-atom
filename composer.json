@@ -18,7 +18,7 @@
     "require": {
         "php": ">=5.4.0",
         "illuminate/support": "~5.0|~6.0",
-        "paymentgateway/atom: dev-master"
+        "paymentgateway/atom": "dev-master"
     },
     
     "autoload": {
