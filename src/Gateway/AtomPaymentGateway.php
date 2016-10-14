@@ -22,11 +22,11 @@ class AtomPaymentGateway implements AtomPaymentGatewayInterface
 	
 	function __construct()
 	{
-		$this->atomlogin 	  = Config::get('indipay.Atom.ATOM_LOGIN');
-        $this->atompassword   = Config::get('indipay.Atom.ATOM_PASSWORD');
-        $this->atomport    	  = Config::get('indipay.Atom.ATOM_PORT');
-        $this->atomproid      = Config::get('indipay.Atom.ATOM_PRO_ID');
-        $this->atomclientcode = Config::get('indipay.Atom.ATOM_CLIENT_CODE');
+		$this->atomlogin 	  = Config::get('Atompay.Atom.ATOM_LOGIN');
+        $this->atompassword   = Config::get('Atompay.Atom.ATOM_PASSWORD');
+        $this->atomport    	  = Config::get('Atompay.Atom.ATOM_PORT');
+        $this->atomproid      = Config::get('Atompay.Atom.ATOM_PRO_ID');
+        $this->atomclientcode = Config::get('Atompay.Atom.ATOM_CLIENT_CODE');
 
         $this->parameters['atomlogin']        = $this->atomlogin;
         $this->parameters['atompassword']     = $this->atompassword;
