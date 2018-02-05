@@ -29,6 +29,6 @@ class AtomServiceProvider extends ServiceProvider
         
         $this->app->bind('atompay', '\PaymentGateway\Atom\Atompay');
 
-        $this->app->bind('\PaymentGateway\Atom\Gateway\AtomPaymentGatewayInterface','\PaymentGateway\Atom\Gateway\\'.$gateway.'Gateway');
+        $this->app->bind('\PaymentGateway\Atom\Gateway\AtomPaymentGatewayInterface','\PaymentGateway\Atom\Gateway\\Atompay');
     }
 }
