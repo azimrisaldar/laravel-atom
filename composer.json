@@ -22,7 +22,7 @@
     
     "autoload": {
         "psr-4": {
-            "PaymentGateway\\Atom\\":"Legends/PaymentGateway/Atom/src"
+            "PaymentGateway\\Atom\\":"src/"
         }
     },
     
