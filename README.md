@@ -9,7 +9,7 @@ These instructions will get you a copy of the project up and running on your loc
 <h2>Installation</h2>
 Install package using composer
 <pre><code>
-    composer require legendconsulting/atom
+    composer require azimrisaldar/laravel-atom
 </pre></code>
 
 Add the service provider to the config/app.php file in Laravel
