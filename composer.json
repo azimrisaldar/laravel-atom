@@ -24,7 +24,7 @@
         "psr-4": {
             "PaymentGateway\\Atom\\":"src/"
         }
-    },
+    }
     
     
     
