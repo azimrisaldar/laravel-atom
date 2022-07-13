@@ -2,7 +2,7 @@
     "name": "azimrisaldar/laravel-atom",
     "description": "This pack is for integrating Atom payment gateway using Laravel 5 *",
     "license": "MIT",
-    "prefer-stable" :true,
+    "prefer-stable" :false,
     "minimum-stability": "dev",
     "keywords": [
         "Laravel 5",
